@@ -72,7 +72,7 @@ In this instance, I have set up a SIP trunk with a provider from Canada.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/c45a3883-f3d6-4adf-ab97-87d1144bde6d)
 
-The next steps are setting up the name of the SIP Trunk and then providing the SIP username and password.
+The next steps are setting up the name of the SIP Trunk, main DID number and then providing the SIP username and password.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/c0b4f433-7022-437a-ac87-8e136ec2be1a)
 
