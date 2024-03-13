@@ -31,3 +31,28 @@ You will be prompted for each LAPS Attribute that needs to be added, it’s best
 Once the AD Schema gets updated, you can go to the Attribute Editor within the properties of a workstation, there should be several LAPS attributes added there.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/fb12bc99-413c-4ec7-b973-f7f685b5b7df)
+
+Now we need to grant the computer objects the rights to manage their own LAPS password, this is where the “Set-LapsADComputerSelfPermission” command comes into play. In this example, I have set up an OU called “Workstations”, this is the OU where all the workstations will go into.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d797c61c-de54-45c3-9c04-f2fa8cc12a7d)
+
+The following has then granted permissions to the OU “Workstations”, now computer objects in that OU have the access to manage LAPS passwords.
+
+Let’s confirm who has extended rights to LAPS AD of the OU “Workstations”. To do this, we can use the following command “Find-LapsADExtendedRights -Identity “OU=Workstations,DC=KINGYSECURITY,DC=local”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/9c11b2e3-2af8-45c3-9050-447e09d2c552)
+
+Here, we can see NT Authority\System and Domain Admins have extended rights, which is good, we don’t want to give any more privileges than is required.
+
+We now need to set up a Group Policy Object, this is to enable the LAPS features that we want to use within our LAPS setup.
+
+We will set up a new GPO for this.
+
+After opening “Group Policy Management” we will right-click on “Group Policy Objects” and click on “New”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/368d8927-0287-49aa-9fc2-2707b3b15fbb)
+
+We can call it LAPS and then click “Ok”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/5bd949a7-4c0b-4f86-9089-eda5a1db2b86)
+
