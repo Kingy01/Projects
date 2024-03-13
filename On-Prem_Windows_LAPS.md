@@ -56,7 +56,7 @@ We can call it LAPS and then click “Ok”.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/5bd949a7-4c0b-4f86-9089-eda5a1db2b86)
 
-We now need to go to “Group Policy Object”, right-click and go to “Edit”.
+We now need to go to “Group Policy Object”, right-click on our newly created GPO and go to “Edit”.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/d7df36e9-a0fa-44ef-b6e6-97f9f6168b22)
 
