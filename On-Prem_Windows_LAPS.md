@@ -54,6 +54,8 @@ After opening “Group Policy Management” we will right-click on “Group Poli
 
 We can call it LAPS and then click “Ok”.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/6d3edfe0-1964-41ba-974b-98bbdf686dc7)
+
 We now need to go to “Group Policy Object”, right-click and go to “Edit”.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/d7df36e9-a0fa-44ef-b6e6-97f9f6168b22)
@@ -84,7 +86,7 @@ We need to double click on “Enable Password Encryption”.
 
 Then we need to click “Enable” then “Apply and Ok”.
 
-![image](https://github.com/Kingy01/Projects/assets/24928927/6d3edfe0-1964-41ba-974b-98bbdf686dc7)
+
 
 
 
