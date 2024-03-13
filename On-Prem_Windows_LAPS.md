@@ -54,5 +54,42 @@ After opening “Group Policy Management” we will right-click on “Group Poli
 
 We can call it LAPS and then click “Ok”.
 
+We now need to go to “Group Policy Object”, right-click and go to “Edit”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d7df36e9-a0fa-44ef-b6e6-97f9f6168b22)
+
+We now need to go to “Computer Configuration > Policies > Administrative Templates > System > LAPS.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/496ceff6-c2e7-4b29-8594-a636e6bd63f8)
+
+There are a few options that we can enable here, I have enabled a few in this example and have got a fairly straight forward setup here without adding way too much complexity.
+
+I will go through the settings I have enabled with a top-down approach.
+
+The first one is enabling password backup for DSRM accounts, Directory Services Restore Mode is a function that can be used to recover Active Direction Domain Services by booting up in safe mode to restore a working config of ADDS. This requires you to know your DSRM password.
+
+So by enabling this feature in LAPS, the password for DSRM will be managed and backed up within Active Directory by LAPS.
+
+To enable it, we need to double click on “Enable password backup for DSRM accounts” then click “enable” followed by “apply and then ok”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/c504e3d1-8e3c-47df-8cad-68e295463222)
+
+The next thing we are going to do is enable password encryption, which is required for enabling the password backup of DSRM passwords and since this server is a domain controller, the backup of DSRM passwords will work!. 
+
+Also enabling password encryption with LAPS, provides an extra security layer.
+
+We need to double click on “Enable Password Encryption”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/9aa27aa1-9529-45a2-8d03-c05cfb76e448)
+
+Then we need to click “Enable” then “Apply and Ok”.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/6d3edfe0-1964-41ba-974b-98bbdf686dc7)
+
+
+
+
+
+
 ![image](https://github.com/Kingy01/Projects/assets/24928927/5bd949a7-4c0b-4f86-9089-eda5a1db2b86)
 
