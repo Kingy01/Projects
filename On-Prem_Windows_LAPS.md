@@ -82,9 +82,7 @@ Also enabling password encryption with LAPS, provides an extra security layer.
 
 We need to double click on “Enable Password Encryption”.
 
-![image](https://github.com/Kingy01/Projects/assets/24928927/9aa27aa1-9529-45a2-8d03-c05cfb76e448)
 
-Then we need to click “Enable” then “Apply and Ok”.
 
 
 
