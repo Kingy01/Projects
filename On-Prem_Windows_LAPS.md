@@ -54,7 +54,7 @@ After opening “Group Policy Management” we will right-click on “Group Poli
 
 We can call it LAPS and then click “Ok”.
 
-![image](https://github.com/Kingy01/Projects/assets/24928927/6d3edfe0-1964-41ba-974b-98bbdf686dc7)
+
 
 We now need to go to “Group Policy Object”, right-click and go to “Edit”.
 
