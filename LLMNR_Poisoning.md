@@ -22,6 +22,5 @@ Responder will then listen for events, respond to them and get information such 
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/f4e4916f-03b7-44e3-a04a-1e802671dfa3)
 
-What happened was the victim tried to connect to a network share that didn't exist, responder got the query and then responded with it, saying that they know how to reach that network share, the victim had put in their credentials to try connect to the network share
-from their end, and we were able to get the password hash of the victim.
+What happened was the victim tried to connect to a network share that didn't exist, responder got the query and then responded with it, saying that they know how to reach that network share, we were then able to obtain the password hash of the victim.
 
