@@ -68,6 +68,15 @@ Select the name of your LLMNR GPO, in my case it's "LLMNR".
 
 Then click "Ok".
 
+Now, let's disable NBT-NS via GPO, we can create a new GPO and call it NBT-NS using the same instructions as above.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d451f220-88a4-447f-8e6a-386f6cacce6c)
+
+We will write a PowerShell script and then add the PowerShell script to our NBT-NS GPO to run on startup, this will then make a registry change on all workstations that are joined to our domain and basically what the registry change will be doing is disabling NetBIOS over TCP/IP.
+
+
+
+
 
 
 
