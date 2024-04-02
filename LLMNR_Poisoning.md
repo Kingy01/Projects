@@ -133,6 +133,11 @@ Now, to check via PowerShell, we can open PowerShell and then use the following 
 
 The 0 confirms that it's now been mitigated.
 
+To check that NetBIOS has been disabled, we can open command prompt and then do an ipconfig /all
+
+Then under our Ethernet adapter, it will show that NetBIOS over TCP/IP is disabled, below is an example of what it should look like to confirm that our startup script has worked.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/e391f82c-12dc-4cda-9b11-64daa4028441)
 
 
 
