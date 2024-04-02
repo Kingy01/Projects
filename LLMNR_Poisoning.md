@@ -95,9 +95,23 @@ Then click on "Add".
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/6d683f9d-808f-47c4-8d4b-b437aceb61cf)
 
+We will be prompted to then provide our script.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/059336ea-7c02-4496-a36b-f6918ee6537e)
 
+Click on "Browse".
 
+Then open up the PowerShell script we created earlier.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/ca1a4f19-6887-4041-b678-f63d36d55208)
+
+Then click "Ok".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/e4e08ccc-fb5a-4e45-bc85-2eb44f834083)
+
+Then click "Apply", then "Ok".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/bc8d0beb-f988-475c-bd04-f18f1fea77e1)
 
                                          ███████████████████████████
                                          ███████▀▀▀░░░░░░░▀▀▀███████
