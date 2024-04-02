@@ -27,3 +27,11 @@ What happened was the victim tried to connect to a network share that didn't exi
 When any LLMNR event occurs inside the LAN, responder can respond to that maliciously and obtain user hashes.
 
 We can then use hashcat to try and crack the hash, however if the password is strong and it isn't in any dictionary lists that are used, then we won't be able to crack the hash.
+
+## LLMNR and NBT-NS Mitigation
+
+The good news to all of this is both of these are very easy to mitigate against, we will start off with how to mitigate LLMNR, followed by how to mitigate NBT-NS.
+
+To disable LLMNR, we can create a group policy and push it out to all domain joined hosts on the network, to do this we will create a new group policy object, we can do this by right-clicking on "Group Policy Objects" and going to "New"
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/be39c74c-bcb6-415b-9c3a-523e08b5e0d3)
