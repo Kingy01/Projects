@@ -24,3 +24,5 @@ Responder will then listen for events, respond to them and get information such 
 
 What happened was the victim tried to connect to a network share that didn't exist, responder got the query and then responded with it, saying that they know how to reach that network share, we were then able to obtain the password hash of the victim.
 
+When any LLMNR event occurs inside the LAN, responder can respond to that maliciously and obtain user hashes.
+
