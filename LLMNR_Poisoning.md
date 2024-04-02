@@ -44,8 +44,57 @@ We now need to right-click on our newly created policy, in my case "LLMNR" and g
 
 Now, go to Computer Configuration > Policies > Administrative Templates > Network > DNS Client
 
-The policy within DNS Client that we want to make changes to is "Turn off multicase name resolution".
+The policy within DNS Client that we want to make changes to is "Turn off multicast name resolution".
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/1e271c6c-b655-4341-bc2f-5450c486b896)
 
+Double-click on "Turn off multicast name resolution.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/41219e46-5542-4343-9d75-c6acab9da390)
+
+We then want to click on "Enable", then "Apply" then click "Ok".
+
+We then want to apply this GPO to our workstations OU, whatever OU you're keeping your workstations in, that's the OU that you want to apply the GPO to.
+
+In my case, in my current environment here, my OU is "Workstations".
+
+Right-click on the OU where your workstations are and go to "Link an Existing GPO".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/db5f3206-2178-4489-9089-68c1468f2613)
+
+Select the name of your LLMNR GPO, in my case it's "LLMNR".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/341149f3-6b12-4c06-bbb6-9a70afff1ff1)
+
+Then click "Ok".
+
+
+
+
+
+
+                                         ███████████████████████████
+                                         ███████▀▀▀░░░░░░░▀▀▀███████
+                                         ████▀░░░░░░░░░░░░░░░░░▀████
+                                         ███│░░░░░░░░░░░░░░░░░░░│███
+                                         ██▌│░░░░░░░░░░░░░░░░░░░│▐██
+                                         ██░└┐░░░░░░░░░░░░░░░░░┌┘░██
+                                         ██░░└┐░░░░░░░░░░░░░░░┌┘░░██
+                                         ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██
+                                         ██▌░│██████▌░░░▐██████│░▐██
+                                         ███░│▐███▀▀░░▄░░▀▀███▌│░███
+                                         ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██
+                                         ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██
+                                         ████▄─┘██▌░░░░░░░▐██└─▄████
+                                         █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████
+                                         ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████
+                                         █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████
+                                         ███████▄░░░░░░░░░░░▄███████
+                                         ██████████▄▄▄▄▄▄▄██████████
+                                         ███████████████████████████
+
+███████████████████████▀████████████████████████████████████████████████████████
+█▄─█─▄█▄─▄█▄─▀█▄─▄█─▄▄▄▄█▄─█─▄███─▄▄▄▄█▄─▄▄─█─▄▄▄─█▄─██─▄█▄─▄▄▀█▄─▄█─▄─▄─█▄─█─▄█
+██─▄▀███─███─█▄▀─██─██▄─██▄─▄████▄▄▄▄─██─▄█▀█─███▀██─██─███─▄─▄██─████─████▄─▄██ 
+▀▄▄▀▄▄▀▄▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▄▀▀▄▄▄▀▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▄▀▀▄▄▄▄▀▀▄▄▀▄▄▀▄▄▄▀▀▄▄▄▀▀▀▄▄▄▀▀
+                                    
