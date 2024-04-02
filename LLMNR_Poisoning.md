@@ -74,6 +74,17 @@ Now, let's disable NBT-NS via GPO, we can create a new GPO and call it NBT-NS us
 
 We will write a PowerShell script and then add the PowerShell script to our NBT-NS GPO to run on startup, this will then make a registry change on all workstations that are joined to our domain and basically what the registry change will be doing is disabling NetBIOS over TCP/IP.
 
+This is the PowerShell script that we will be using.
+
+set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\tcpip* -Name NetbiosOptions -Value 2
+
+We can open a notepad and put this in there and then save it as a .ps1 extension. 
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/3173e271-6a69-45e0-8818-420d81952f45)
+
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/c8448aa3-147a-4a0a-80aa-14300b830d2c)
+
 
 
 
