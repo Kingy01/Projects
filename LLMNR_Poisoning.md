@@ -85,9 +85,15 @@ We can open a notepad and put this in there and then save it as a .ps1 extension
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/c8448aa3-147a-4a0a-80aa-14300b830d2c)
 
+Now, let's go back to our NBT-NS GPO and add this script to the GPO as a Startup Script.
 
+We can do this by going to Computer Configuration > Windows Settings > Scripts > Startup 
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/2006a335-6d06-4531-8b6b-699a680851e2)
 
+Then click on "Add".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/6d683f9d-808f-47c4-8d4b-b437aceb61cf)
 
 
 
