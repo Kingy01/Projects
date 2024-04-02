@@ -1,6 +1,6 @@
-### LLMNR Poisoning
+## LLMNR Poisoning
 
-## Overview
+### Overview
 
 LLMNR stands for Link-Local Multicast Name Resolution, it is a protocol that allows IPv4 and IPv6 hosts to perform name resolution for hosts within the name LAN and it doesn't require a DNS server to achieve this, or any DNS configurations for that matter either.
 
@@ -8,7 +8,7 @@ The issue with LLMNR is that it doesn't require any authentication, this opens a
 name and DNS is not being used to resolve the domain name, because of this, an LLMNR query will be sent across the LAN, asking other hosts on the network if it knows where to find the specific host that it tried to resolve, an attacker can basically respond to this LLMNR request saying that they know
 how to reach the host, but then they ask the victim for their hash, the victim then passes the attacker their hash and this is where things spiral from here.
 
-## Exploiting LLMNR
+### Exploiting LLMNR
 
 To achieve an LLMNR attack, the attacker must listen for LLMNR requests and when they get the requests, respond with a decoy IP or their own IP address, in turn this can lead to a few attack vectors, relay attacks and credential theft.
 
