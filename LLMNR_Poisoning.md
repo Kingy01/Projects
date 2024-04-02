@@ -35,3 +35,17 @@ The good news to all of this is both of these are very easy to mitigate against,
 To disable LLMNR, we can create a group policy and push it out to all domain joined hosts on the network, to do this we will create a new group policy object, we can do this by right-clicking on "Group Policy Objects" and going to "New"
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/be39c74c-bcb6-415b-9c3a-523e08b5e0d3)
+
+We can then give it a name, I called my policy "LLMNR", then click "Ok".
+
+We now need to right-click on our newly created policy, in my case "LLMNR" and go to "Edit".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/b909dd37-f1bf-4452-a4ec-1d5fd68146e4)
+
+Now, go to Computer Configuration > Policies > Administrative Templates > Network > DNS Client
+
+The policy within DNS Client that we want to make changes to is "Turn off multicase name resolution".
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/1e271c6c-b655-4341-bc2f-5450c486b896)
+
+
