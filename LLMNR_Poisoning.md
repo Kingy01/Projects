@@ -76,7 +76,7 @@ We will write a PowerShell script and then add the PowerShell script to our NBT-
 
 This is the PowerShell script that we will be using.
 
-set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\tcpip* -Name NetbiosOptions -Value 2
+Set-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\services\NetBT\Parameters\Interfaces\tcpip* -Name NetbiosOptions -Value 2
 
 We can open a notepad and put this in there and then save it as a .ps1 extension. 
 
@@ -112,6 +112,23 @@ Then click "Ok".
 Then click "Apply", then "Ok".
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/bc8d0beb-f988-475c-bd04-f18f1fea77e1)
+
+## Mitigation Confirmation
+
+There is more than one way that we can confirm that LLMNR is now mitigated, I will show a way through command prompt and another way through PowerShell.
+
+Starting with command prompt first, we can use reg query to confirm that LLMNR is mitigated, we can use the following command below.
+
+reg query "HKLM\Software\Policies\Microsoft\Windows NT\DNSClient" /s
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d1545f03-5d66-44ac-b59e-9743c78248e4)
+
+0x0 confirms that its now been mitigated.
+
+Now, to check via PowerShell, we can open PowerShell and then use the following command.
+
+Get-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows NT\DNSClient" -name EnableMulticast).EnableMulticast
+
 
 
 
