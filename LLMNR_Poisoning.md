@@ -127,7 +127,13 @@ reg query "HKLM\Software\Policies\Microsoft\Windows NT\DNSClient" /s
 
 Now, to check via PowerShell, we can open PowerShell and then use the following command.
 
-Get-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows NT\DNSClient" -name EnableMulticast).EnableMulticast
+(Get-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows NT\DNSClient" -name EnableMulticast).EnableMulticast
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/15a33c0c-d89c-4f1d-9804-2841a93686c0)
+
+The 0 confirms that it's now been mitigated.
+
+
 
 
 
