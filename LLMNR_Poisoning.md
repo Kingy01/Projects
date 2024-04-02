@@ -26,3 +26,4 @@ What happened was the victim tried to connect to a network share that didn't exi
 
 When any LLMNR event occurs inside the LAN, responder can respond to that maliciously and obtain user hashes.
 
+We can then use hashcat to try and crack the hash, however if the password is strong and it isn't in any dictionary lists that are used, then we won't be able to crack the hash.
