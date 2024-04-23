@@ -59,4 +59,16 @@ There are options in terms of tools that we can use to encrypt hard drives for L
 
 Before moving further with this, I want to make it clear that this hardening technique is to mitigate against physical security, if for example you have entered the decryption key to decrypt the hard drive, this key will be in RAM (Random Access Memory), so for example say you left your desk to go for lunch, if someone had access they could do a memory dump on your machine and then use for example Volatility to get the decryption key, this goes for if someone has remote access to your computer as well. For example, say your system is infected with malware and the threat actor had access to your system remotely, this mitigation does not protect from this, it only protects you if someone steals the hard drive physically or tries to access your computer system physically while it isn't already booted and running with the decryption key already entered into the system.
 
+I also want to point out that the implementation of Cryptsetup in LUKS has some security flaws.
 
+If we encrypt a drive using LUKS, it will use different fields, I will put below a list of those fields and a description of them.
+
+* LUKS phdr -  It is the LUKS partition header, it essentially stores information about the UID (Universally Unique Identifier), it also stores which cypher is being used, which cypher mode and the key length and checksum of the master key, it will also contain information about salts.
+
+* KM  - LUKS uses key materials, which is what KM stands for and the LUKS format provides up to 8 key material sections, each one of these sections can contain a copy of the same master key and can be encrypted with a different password, which will allow different users to use different passwords to decrypt the same disk. So, for example say we have bob, he encrypts his password and it gets stored in KM1 and then we have a different user named kate, her password to encrypt the maset key then gets stored in KM5.
+
+* Bulk Data - Bulk data is the data that is actually encrypted by the master key, which the master key is saved and encrypted in one of the key material sections such as KM1, KM3 etc.
+
+Below is what the actual LUKS header will look like.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/24bdaebe-2728-4a8e-aa8c-ee39d0229e5e)
