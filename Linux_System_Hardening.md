@@ -105,6 +105,11 @@ In a nutshell, let's compare a firewall to a security guard at a nightclub and l
 
 Firewalls act on a first match rule basis, it will start at the first rule and keep going down until the last rule, if there is no rule in-place to say the particular packet cannot leave or enter the network, then the firewall will let it inside the network or outside of the network, depending on what rules have been setup inbound and outbound.
 
-There are several different firewalls, we have network based firewalls, host based firewalls, web application firewalls etc. Setting up a firewall on the Linux system itself will be a host based firewall.
+There are several different firewalls, we have network based firewalls, host based firewalls, web application firewalls etc. Setting up a firewall on the Linux system itself will be a host based firewall. This is because the firewall will be setup on the host system itself, which will only protect the host system and not the network, where as a network based firewall will help protect a network of devices, however it's also important to note that firewalls are not 100% fool proof and can be fooled.
+
+A firewall is just another layer of security we should use as a defense-in-depth approach, the more layers of security that we implement, the better our security posture will be, remember that there is no such thing as 100% security and another thing to note is complexity is also the nemesis to security, the more complex systems are and configured, the more opportunity for loopholes and vulnerabilities to be discovered.
+
+
+
 
 
