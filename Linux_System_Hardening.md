@@ -37,3 +37,12 @@ of the door, the motion sensor can pick this up as movement and the door will op
 
 Ok, unfortunately looking after the physical security to access our IT assets is not enough, if that layer is breached, then it could be game over, so we also need to look at another layer, which is the physical security of the asset itself.
 
+Having a very complex password on your Linux machine isn't enough if someone can access it physically, GRUB can be used, which is a bootloader which can reset the root password account.
+Many BIOS and UEFI firmware allows an individual to set up a boot password and what this does is protect against unauthorized users booting up the system, it's used for personal laptops/computers, not servers, it's not wise to set this up on a server, it will cause a lot of headache.
+
+So, to iterate on what I said above, setting up a boot password means that when the system is boot up, a password will need to be given in order for the system to boot up to the actual login screen.
+
+We could use GRUB to add a GRUB password, this can also depend on what Linux system that we want to protect, there are several tools out there that can achieve this. I will discuss grub2-mkpasswd-pbkdf2.
+
+What grub2-mkpasswd-pbkdf2 does is prompt you to input a password twice and then generates a hash, the hash then needs to be added to a configuration file, this configuration file can vary depending on which distro of Linux is being used, this then would protect against someone using GRUB to reset the root account password.
+
