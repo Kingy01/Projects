@@ -109,6 +109,12 @@ There are several different firewalls, we have network based firewalls, host bas
 
 A firewall is just another layer of security we should use as a defense-in-depth approach, the more layers of security that we implement, the better our security posture will be, remember that there is no such thing as 100% security and another thing to note is complexity is also the nemesis to security, the more complex systems are and configured, the more opportunity for loopholes and vulnerabilities to be discovered.
 
+There are several Linux firewalls out there that we could use, but we will cover a few very common ones here, such as iptables, ufw and nftables.
+
+It's also important to note that Linux firewalls are stateful firewalls, meaning they will track ongoing connections and restrict packets based on particular fields within the IP and TCP/UDP headers.
+
+
+
 
 
 
