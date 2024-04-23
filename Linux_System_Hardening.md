@@ -101,6 +101,10 @@ To use LUKS, the first thing that needs to be done is installing cryptsetup-luks
 
 Whether the system is acting as a client or server, or even both. We can setup a firewall on the system which will block any ports that don't need or require to be open/used on the system and only allow the ports open that we need to be open for certain services, such as HTTPS, DNS as a few examples, we can create granular rules to increase security posture on our Linux system, a firewall also allows us to create rules around source IP and destination IPs as well, there might be a scenario where we need to open a port for a service for example and we only want a certain Source IP to be able to communicate using that port to our Linux system. An example of a service could be a VPN as an example or SSH.
 
+In a nutshell, let's compare a firewall to a security guard at a nightclub and let's say the security guard is only letting people inside the club if they have a valid ID that they can show the security guard and those that don't have a valid ID, will not get through and get access to go inside the nightclub, a firewall is like a security guard, it has rules that it has been given and going off of those rules, it decides which packets are allowed into the network and which packets are allowed outside of the network.
 
+Firewalls act on a first match rule basis, it will start at the first rule and keep going down until the last rule, if there is no rule in-place to say the particular packet cannot leave or enter the network, then the firewall will let it inside the network or outside of the network, depending on what rules have been setup inbound and outbound.
+
+There are several different firewalls, we have network based firewalls, host based firewalls, web application firewalls etc. Setting up a firewall on the Linux system itself will be a host based firewall.
 
 
