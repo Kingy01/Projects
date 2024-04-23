@@ -44,5 +44,15 @@ So, to iterate on what I said above, setting up a boot password means that when 
 
 We could use GRUB to add a GRUB password, this can also depend on what Linux system that we want to protect, there are several tools out there that can achieve this. I will discuss grub2-mkpasswd-pbkdf2.
 
+
 What grub2-mkpasswd-pbkdf2 does is prompt you to input a password twice and then generates a hash, the hash then needs to be added to a configuration file, this configuration file can vary depending on which distro of Linux is being used, this then would protect against someone using GRUB to reset the root account password.
 
+It's important to check the documentation on the particular Linux distro on how to configure the file successfully to achieve this.
+
+### Filesystem Partitioning & Encryption
+
+Encryption is important and what it does is encrypt data and makes it un-readable unless you have the decryption key.
+
+As I said earlier, if someone has physical access, the means and the tools, what's stopping them from just taking the hard drive from the asset, if we encrypt the hard drive itself at least the data is protected, the threat actor won't be able to access it without the decryption key and what's even more important is setting up a very complex 
+
+There are options in terms of tools that we can use to encrypt hard drives for Linux systems, most Linux distros come with LUKS (Linux Unified Key Setup).
