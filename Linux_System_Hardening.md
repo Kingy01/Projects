@@ -56,3 +56,7 @@ Encryption is important and what it does is encrypt data and makes it un-readabl
 As I said earlier, if someone has physical access, the means and the tools, what's stopping them from just taking the hard drive from the asset, if we encrypt the hard drive itself at least the data is protected, the threat actor won't be able to access it without the decryption key and what's even more important is setting up a very complex 
 
 There are options in terms of tools that we can use to encrypt hard drives for Linux systems, most Linux distros come with LUKS (Linux Unified Key Setup).
+
+Before moving further with this, I want to make it clear that this hardening technique is to mitigate against physical security, if for example you have entered the decryption key to decrypt the hard drive, this key will be in RAM (Random Access Memory), so for example say you left your desk to go for lunch, if someone had access they could do a memory dump on your machine and then use for example Volatility to get the decryption key, this goes for if someone has remote access to your computer as well. For example, say your system is infected with malware and the threat actor had access to your system remotely, this mitigation does not protect from this, it only protects you if someone steals the hard drive physically or tries to access your computer system physically while it isn't already booted and running with the decryption key already entered into the system.
+
+
