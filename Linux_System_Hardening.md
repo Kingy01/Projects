@@ -72,3 +72,35 @@ If we encrypt a drive using LUKS, it will use different fields, I will put below
 Below is what the actual LUKS header will look like.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/24bdaebe-2728-4a8e-aa8c-ee39d0229e5e)
+
+LUKS does use existing block encryption implementations such as Cryptsetup for example.
+
+Let's go over the actual syntax that encrypts data, below is the syntax.
+
+enc_data = encrypt(cipher_name, cipher_mode, key, original, original_length)
+
+Looking at the above syntax, we can see that LUKS requires a cypher and a cypher mode.
+
+It's also important to note that the key supplied which will be the password supplied by the user will use PBKDF2.
+
+We can also use a salt with our password if we wish using PBKDF2, this will use the salt with the hash function, along with an iteration count.
+
+Below is an example of syntax to achieve this.
+
+key = PBKDF2(password,salt,iteration_count, derived_key_length)
+
+Now if we wanted to decrypt the data, below is an example of syntax to decrypt the data and get the data back in plaintext.
+
+original = decrypt(cipher_name, cipher_mode, key, enc_data, original_length)
+
+To use LUKS, the first thing that needs to be done is installing cryptsetup-luks on the Linux system, this can be done using the syntax apt install cryptsetup or yum install cryptsetup-luks, depending on which distro of Linux you're using.
+
+
+
+### Firewalls
+
+Whether the system is acting as a client or server, or even both. We can setup a firewall on the system which will block any ports that don't need or require to be open/used on the system and only allow the ports open that we need to be open for certain services, such as HTTPS, DNS as a few examples, we can create granular rules to increase security posture on our Linux system, a firewall also allows us to create rules around source IP and destination IPs as well, there might be a scenario where we need to open a port for a service for example and we only want a certain Source IP to be able to communicate using that port to our Linux system. An example of a service could be a VPN as an example or SSH.
+
+
+
+
