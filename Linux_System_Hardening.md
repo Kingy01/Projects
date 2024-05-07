@@ -202,6 +202,18 @@ I then opened up my browser and tried to go to google.com and I wasn't successfu
 
 This is proof that the deny inbound traffic rule is working correctly.
 
+At this stage you might be wondering, why are you showing me how to block all traffic on my Linux system for, I won't be able to browse the Internet or do anything enjoyable if all the traffic coming inbound to my machine is blocked, hold your horses, we will be adding rules to allow certain traffic inbound, but the reasoning for the deny rule is to show a few things, for one, show that we need inbound rules configured here in the "INPUT" chain for our Linux machine to be able to successfully access services such as HTTPS, HTTP etc successfully, we can do that by creating a rule to allow all inbound traffic, though this is severely not recommended as it's bad security practices, or we need to create specific rules to allow specific traffic to our Linux machine. 
+
+Creating specific rules for specific traffic is the recommended path, not to just create a rule to accept everything.
+
+Another thing it shows is, firewalls operate on a first match basis, when a firewall is going through rules, it will go through the rules from top to bottom, looking to see if a rule exists for the particular traffic and scenario it's dealing with, so basically as an example, if we have a bunch of firewall rules created and the drop all traffic rule is at the top, the firewall will continue to drop traffic despite the other rules being created.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/4b79f7de-dcad-4d7a-a114-9685a76c2dc1)
+
+Going back at our current firewall rules in iptables, the drop rule is at the top, so all traffic will be dropped, despite having a rule below it accepting traffic on our loopback interface even.
+
+Basically, the lesson here is, we should have a drop all rule created, but that rule should be at the bottom of the firewall rule list, we want our accept rules to be above it and then we also want a drop all rule in our firewall rules for security, since this will then drop any other traffic that isn't specified as a rule to allow within our firewall rules.
+
 
 
 
