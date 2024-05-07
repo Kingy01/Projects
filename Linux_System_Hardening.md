@@ -214,6 +214,23 @@ Going back at our current firewall rules in iptables, the drop rule is at the to
 
 Basically, the lesson here is, we should have a drop all rule created, but that rule should be at the bottom of the firewall rule list, we want our accept rules to be above it and then we also want a drop all rule in our firewall rules for security, since this will then drop any other traffic that isn't specified as a rule to allow within our firewall rules.
 
+All the newly created rules get put above the previously created rules, so I will create the deny all traffic rule first, then start creating the accept rules for protocols that I need to use, such as HTTPS, HTTP etc.
+
+Now, I will create a rule to allow HTTPS traffic inbound, the following syntax can be used to create this rule in the iptables firewall.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/e9c0588f-4fd7-4d3e-8280-10895ef95736)
+
+Let's go over some of the new switches I have used here.
+
+The -p switch is to specify which protocol I want to use, since HTTPS uses TCP, I have configured the protocol in the rule to TCP.
+
+The --dport switch is to specify the destination port within the firewall rule, HTTPS uses port 443, so I have configured the destination port to be 443.
+
+
+
+
+
+
 
 
 
