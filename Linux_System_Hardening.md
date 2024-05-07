@@ -260,6 +260,20 @@ Now let's check the iptables INPUT chain to be sure the rule has been placed in 
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/887db147-8b51-4544-8f08-e775e6c59d00)
 
+Now, I will set up a rule in the firewall to allow DNS traffic. To do this, I will use the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f90c5edd-6fea-4f9d-bd59-a23c24e948ea)
+
+Technically DNS can use both TCP and UDP protocols, however it's most common to use UDP, so in the rule, I have specified the protocol to be UDP and I have also specified the destination port to be 53, that's the port DNS uses.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/5a8aa697-03de-4a7e-83fe-d2e096008278)
+
+Ok, I have now verified the rule has been placed in the firewall rules of iptables.
+
+
+
+
+
 
 
 
