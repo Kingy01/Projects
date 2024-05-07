@@ -116,6 +116,17 @@ There are several Linux firewalls out there that we could use, but we will cover
 
 It's also important to note that Linux firewalls are stateful firewalls, meaning they will track ongoing connections and restrict packets based on particular fields within the IP and TCP/UDP headers.
 
+### IPTables
+
+Before we get started with iptables, it's important to note that rules need to be manually saved to be persistent, if the rules are configured and not manually saved, the rules will disappear after a reboot.
+
+So, what I will do is, I will install the iptables-persistent package on my Linux machine, this will make it very convenient to save any rules after being configured in iptables.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/b8b089fc-bf18-40f9-aeb6-6edf4661c9e8)
+
+Then, I will go ahead with the installation of this package by pressing Y into the terminal and then enter.
+
+
 
 
 
