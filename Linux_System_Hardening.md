@@ -126,6 +126,13 @@ So, what I will do is, I will install the iptables-persistent package on my Linu
 
 Then, I will go ahead with the installation of this package by pressing Y into the terminal and then enter.
 
+Once that has been finished, we will be prompted if we want to save the current IPv4 rules.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d9d5ebe8-5fe2-46e8-8f58-68f50c2a8902)
+
+Click "Yes" if you want the current IPv4 rules to be saved, unless there are rules that should be removed or you have messed up rules, I don't see why not.
+
+
 
 
 
