@@ -250,6 +250,20 @@ Ok, this confirms that the deny all traffic rule has been deleted from iptables.
 
 Now I can successfully browse to Google in my browser.
 
+Ok, now let's create a firewall rule to allow HTTP traffic inbound. We can do this using the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f9376b81-622f-4076-88ee-0ad4d1f1aaf4)
+
+It's identical to the syntax we used earlier to allow HTTPS traffic, the only difference is the destination port, in this rule we have specified port 80 as the destination port instead of port 443. HTTP uses port 80.
+
+Now let's check the iptables INPUT chain to be sure the rule has been placed in the firewall rules.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/887db147-8b51-4544-8f08-e775e6c59d00)
+
+
+
+
+
 
 
 
