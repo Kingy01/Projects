@@ -230,6 +230,19 @@ Here is the iptables list of INPUT rules after I created the rule to allow HTTPS
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/b7c875c0-ec20-438b-b19c-12693ab0ad4d)
 
+As you can see, as I stated earlier, the drop rule appears to be at the top of the list still. Therefore all traffic will still be dropped, let's now go over deleting rules from iptables.
+
+I will now delete the drop all inbound traffic rule from iptables on my Linux machine, to do this, I will use the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/40072303-4523-477e-af45-8330be253c73)
+
+Since I know the rule is the first rule on the firewall list, I have selected the number 1.
+
+-D is the switch used for deleting rules in iptables firewall list.
+
+Then you have to specify whether it's an INPUT rule or OUTPUT rule that you want to delete, in this case it was an INPUT rule, then the number is from line numbers, again since I know the rule is the first rule, the first line, I specified the number 1.
+
+
 
 
 
