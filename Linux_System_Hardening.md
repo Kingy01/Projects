@@ -184,6 +184,18 @@ So when we want to create a new rule, we will use the switch -A for append and t
 
 -J is for jump, which performs the action, so this is where we want to declare if the rule is to accept the traffic, drop the traffic etc.
 
+Next, I will set up a firewall rule to drop all traffic inbound (INPUT), just to show that after I set this firewall rule up, I won't be able to browse the internet or anything successfully.
+
+To configure this firewall rule to drop all inbound traffic, I will use the following syntax in my Linux terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/a9e826d4-7845-4825-a9b0-d40bffdcca70)
+
+Now, let's take a look at the current iptables rules set up under the INPUT chain.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/a5983ade-8c70-433a-840f-182dba19da76)
+
+
+
 
 
 
