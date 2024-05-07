@@ -146,6 +146,8 @@ Just to prove that you need sudo privs, I will show what happens when we try to 
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/d507863c-a225-4733-b0fd-1b3a0d17895c)
 
+How we configure the firewall rules will depend on which services we are using and what traffic needs to go inbound or outbound from the Linux machine, let's say for example we have a Linux machine that we are just going to use for browsing the Internet and just general day to day sort of things, in that case, we would need to configure some outbound rules, this would be, an outbound rule for HTTPS (443), HTTP (80) and since we would need DNS to resolve domain names, we would need to create a outbound DNS rule also.
+
 
 
 
