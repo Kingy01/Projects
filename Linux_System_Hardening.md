@@ -154,6 +154,21 @@ This is what iptables will look like with no firewall rules configured.
 
 How we configure the firewall rules will depend on which services we are using and what traffic needs to go inbound or outbound from the Linux machine, let's say for example we have a Linux machine that we are just going to use for browsing the Internet and just general day to day sort of things, in that case, we would need to configure some outbound rules, this would be, an outbound rule for HTTPS (443), HTTP (80) and since we would need DNS to resolve domain names, we would need to create a outbound DNS rule also.
 
+If you have any applications that need to communicate with the localhost, which will use the localhost interface, we will need to set up a rule to allow this.
+
+First off, I will show how to configure a firewall rule to allow traffic to the localhost, first we should check what the  name of the localhost interface is, we can do this by using the following command in our Linux terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/dbe055c3-2b3d-4db5-b51a-39d230c2c07b)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/84d9e4f4-06aa-4755-9594-d0c362974aab)
+
+Or alternatively, we can also use the following command
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f3d13bb5-cd23-4d1c-88ee-667eff979ec6)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/7376628d-01be-4d91-9dea-adc61bf50fd2)
+
+
 
 
 
