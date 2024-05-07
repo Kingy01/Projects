@@ -152,7 +152,7 @@ This is what iptables will look like with no firewall rules configured.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/d2aa6509-091a-4d19-8e14-67de54605e38)
 
-How we configure the firewall rules will depend on which services we are using and what traffic needs to go inbound or outbound from the Linux machine, let's say for example we have a Linux machine that we are just going to use for browsing the Internet and just general day to day sort of things, in that case, we would need to configure some outbound rules, this would be, an outbound rule for HTTPS (443), HTTP (80) and since we would need DNS to resolve domain names, we would need to create a outbound DNS rule also.
+How we configure the firewall rules will depend on which services we are using and what traffic needs to go inbound or outbound from the Linux machine, let's say for example we have a Linux machine that we are just going to use for browsing the Internet and just general day to day sort of things, in that case, we would need to configure some inbound rules, this would be, an inbound rule for HTTPS (443), HTTP (80) and since we would need DNS to resolve domain names, we would need to create a inbound DNS rule also.
 
 If you have any applications that need to communicate with the localhost, which will use the localhost interface, we will need to set up a rule to allow this.
 
@@ -167,6 +167,10 @@ Or alternatively, we can also use the following command
 ![image](https://github.com/Kingy01/Projects/assets/24928927/f3d13bb5-cd23-4d1c-88ee-667eff979ec6)
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/7376628d-01be-4d91-9dea-adc61bf50fd2)
+
+Ok, now that we know the name of our loopback interface is called lo, we can set up a firewall rule in iptables to accept traffic to our loopback interface.
+
+
 
 
 
