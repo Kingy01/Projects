@@ -254,7 +254,7 @@ Ok, now let's create a firewall rule to allow HTTP traffic inbound. We can do th
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/f9376b81-622f-4076-88ee-0ad4d1f1aaf4)
 
-It's identical to the syntax we used earlier to allow HTTPS traffic, the only difference is the destination port, in this rule we have specified port 80 as the destination port instead of port 443. HTTP uses port 80.
+It's identical to the syntax we used earlier to allow HTTPS traffic, the only difference is the destination port, in this rule we have specified port 80 as the destination port instead of port 443. HTTP uses port 80 and also uses the TCP protocol.
 
 Now let's check the iptables INPUT chain to be sure the rule has been placed in the firewall rules.
 
