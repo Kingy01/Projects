@@ -132,6 +132,9 @@ Once that has been finished, we will be prompted if we want to save the current 
 
 Click "Yes" if you want the current IPv4 rules to be saved, unless there are rules that should be removed or you have messed up rules, I don't see why not.
 
+After this, we will then be prompted if we want to save the current IPv6 rules, again, if you have any IPv6 rules and they are not requiring to be removed or fixed up, you can say "Yes", otherwise obviously there is a few options, re-do the rules again, fix any current rules that need fixing, general house-keeping.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/abd5d814-e29c-4401-af7d-d674e207ac66)
 
 
 
