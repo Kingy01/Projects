@@ -95,6 +95,9 @@ original = decrypt(cipher_name, cipher_mode, key, enc_data, original_length)
 
 To use LUKS, the first thing that needs to be done is installing cryptsetup-luks on the Linux system, this can be done using the syntax apt install cryptsetup or yum install cryptsetup-luks, depending on which distro of Linux you're using.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/73ad9f56-b332-46f8-baed-637746b3279a)
+
+
 
 
 ### Firewalls
