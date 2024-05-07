@@ -170,6 +170,23 @@ Or alternatively, we can also use the following command
 
 Ok, now that we know the name of our loopback interface is called lo, we can set up a firewall rule in iptables to accept traffic to our loopback interface.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/fcc0cb90-2a2f-4e25-8001-66eb11ad1c34)
+
+This command will create an inbound firewall rule to accept traffic to the loopback interface.
+
+Before we get into any other firewall rules, I will go over the switches in the syntax and what they mean.
+
+-A means append and we want to append the rule to a chain, there are two chains, inbound and outbound. However iptables does not reference them as inbound and outbound, inbound is referenced as "INPUT" and outbound is referenced as "OUTPUT".
+
+So when we want to create a new rule, we will use the switch -A for append and then we will use either INPUT or OUTPUT, depending on which direction we will be using for the newly created rule.
+
+-i means for interface, when we use the -i switch we are then indicating what interface we are wanting to use within the firewall rule we are creating.
+
+-J is for jump, which performs the action, so this is where we want to declare if the rule is to accept the traffic, drop the traffic etc.
+
+
+
+
 
 
 
