@@ -242,6 +242,13 @@ Since I know the rule is the first rule on the firewall list, I have selected th
 
 Then you have to specify whether it's an INPUT rule or OUTPUT rule that you want to delete, in this case it was an INPUT rule, then the number is from line numbers, again since I know the rule is the first rule, the first line, I specified the number 1.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/7e967759-5201-4f28-9908-d4f2f75b06b7)
+
+Ok, this confirms that the deny all traffic rule has been deleted from iptables.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/354d7843-e09d-4e24-9b6f-f22ad1c6588e)
+
+Now I can successfully browse to Google in my browser.
 
 
 
