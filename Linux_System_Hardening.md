@@ -194,6 +194,13 @@ Now, let's take a look at the current iptables rules set up under the INPUT chai
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/a5983ade-8c70-433a-840f-182dba19da76)
 
+We can see the first rule that was set up to allow traffic to the loopback interface, followed by the deny all inbound traffic rule I created.
+
+I then opened up my browser and tried to go to google.com and I wasn't successful.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/2dbeea91-7aef-464b-b56a-397d89f1f6d5)
+
+This is proof that the deny inbound traffic rule is working correctly.
 
 
 
