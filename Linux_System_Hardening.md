@@ -136,6 +136,18 @@ After this, we will then be prompted if we want to save the current IPv6 rules, 
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/abd5d814-e29c-4401-af7d-d674e207ac66)
 
+Another thing to note is you will need sudo privileges to be able to use iptables, this includes configuring rules, removing rules, reading rules etc.
+
+To list any current rules within iptables, we will use the following command in our Linux terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/86d64dd4-cdba-4788-81ed-4e143b55accb)
+
+Just to prove that you need sudo privs, I will show what happens when we try to list the iptables rules without sudo.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/d507863c-a225-4733-b0fd-1b3a0d17895c)
+
+
+
 
 
 
