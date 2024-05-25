@@ -480,6 +480,22 @@ What I have done here is deny traffic coming from the IP 192.168.144.5
 
 Here I have denied traffic to port 21, which is FTP.
 
+Now to actually check the firewall rules to confirm they have been added.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/6042fe06-9733-4123-ac86-66ceb0d9a7bd)
+
+Let's go over deleting some firewall rules
+
+First, what we will do is find out what the number of the rule is that we want to delete, we can do this by using the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/e1a95d48-6aaf-40e3-bd58-8bb4d8268b0a)
+
+Now that I have the numbers of the firewall rules, I will delete a few.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/2ae1f2b7-c3ba-479e-b7d4-bc9d8aba81e9)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/63b29900-ab34-4170-85ee-34b7bd913aed)
+
 
 
 
