@@ -312,6 +312,11 @@ Ok, now that I have added a table, let's now list the current nftables tables to
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/23795bf4-8266-4bea-b9e3-4d027b076d98)
 
+Ok, the table has been added to the tables of nftables successfully, now it's required to create a chain for the Internet table, so I will now create a chain for the Internet table and call it Inbound, this is a regular chain that I am creating and not a base chain, just to be clear.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/0accde81-d7d2-4316-a679-1a6f54871cb5)
+
+What I have done here is instruct nftables to add a chain, I have then given the address family which is inet, then I have provided the table name, in my case "Internet", followed by the chain name that I want created, which is Inbound.
 
 
 
