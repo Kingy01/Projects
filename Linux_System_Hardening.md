@@ -286,7 +286,7 @@ It will generate rules that you have configured in your iptables after you submi
 
 ## Nftables
 
-Let's now go over Nftables, Nftables does not have any rules configurd out of the box, with nftables, we ned to first creeate tables then add chains to those tables that hook into the Linux kernal as netfilter hooks, then we need to fill those chains with rules.
+Let's now go over nftables, nftables does not have any rules configurd out of the box, with nftables, we need to first create tables then add chains to those tables that hook into the Linux kernal as netfilter hooks, then we need to fill those chains with rules.
 
 We will need to execute all the nft rules using sudo.
 
