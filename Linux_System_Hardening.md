@@ -306,6 +306,14 @@ Here, we will use the inet address family, simply because it is used for both IP
 
 But, now we need a table to add as part of the inet family, here I will add a table called "Internet"
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/e94c19d2-28be-44aa-9afa-7d0976d2ac1c)
+
+Ok, now that I have added a table, let's now list the current nftables tables to confirm that the table has been added.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/23795bf4-8266-4bea-b9e3-4d027b076d98)
+
+
+
 
 
 
