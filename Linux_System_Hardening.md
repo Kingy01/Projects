@@ -352,6 +352,8 @@ Now, to confirm that the table has actually been deleted.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/9fabd2b3-7e1c-435b-b3ef-2385b5cee4c9)
 
+Now, let's add some basic firewall rules to our chain within nftables.
+
 
 
 
