@@ -280,6 +280,9 @@ Let's go over what we need to do to save the rules and make them persistent, all
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/3e0fb042-35ca-42b4-a75c-d708d9014d20)
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/a3b9f248-87c6-4de9-84c1-09345a581df8)
+
+It will generate rules that you have configured in your iptables after you submit this syntax.
 
 
 
