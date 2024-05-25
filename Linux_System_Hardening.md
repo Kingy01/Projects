@@ -474,7 +474,7 @@ If we want to deny traffic, all we need to do is replace allow with deny on any 
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/3f82df9e-3ee6-4d89-b08b-4a52043d0722)
 
-
+What I have done here is deny traffic coming from the IP 192.168.144.5
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/467ab931-f093-42e0-bcb1-a890088c8d53)
 
