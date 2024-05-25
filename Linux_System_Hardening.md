@@ -354,6 +354,18 @@ Now, to confirm that the table has actually been deleted.
 
 Now, let's add some basic firewall rules to our chain within nftables.
 
+I will start by adding a rule to allow incoming HTTPS traffic on port 443.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/3f79a31b-795b-48c7-b811-787b6e36900c)
+
+Then, I will check the ruleset to confirm that the rule has been added in the Inbound chain.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/0e13069a-5131-4c52-a745-f9e4786eb1c2)
+
+Here, I have confirmed there is a rule for tcp 443 added within the inbound chain.
+
+
+
 
 
 
