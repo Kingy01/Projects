@@ -366,7 +366,17 @@ Here, I have confirmed there is a rule for tcp 443 added within the inbound chai
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/c434c436-4c26-40e8-8f0b-b8311b668c26)
 
+Next, I will add a few more rules to allow traffic on HTTP and DNS as a few other examples.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/5faa9320-97b2-49a5-9031-8ec9ea4c4901)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f001e103-6d08-49ab-a6a2-08c44ae0ced9)
+
+Now I will check the ruleset and confirm that these rules have been added.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/85ce6e7f-c5cb-42f9-a51e-aa1e7679f79e)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/fbd0e6c5-1b6f-467f-958c-65dacfdc4ad0)
 
 
 
