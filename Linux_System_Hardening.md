@@ -270,6 +270,11 @@ Technically DNS can use both TCP and UDP protocols, however it's most common to 
 
 Ok, I have now verified the rule has been placed in the firewall rules of iptables.
 
+Let's go over a rule that actually blocks an IP address for example, let's say there is a known malicious IP and you don't want any traffic coming in from this IP address as an example, we can configure a rule like this as an example.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/e09506ba-e2e6-459e-9c77-e94761cd0912)
+
+So, here we are creating the rule for inbound traffic using the INPUT syntax and then we are using the -s switch to specify the source, which will be the IP address that we want to block, then we will specify the action which is -j, and the action we want here is DROP. 
 
 
 
