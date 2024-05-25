@@ -342,7 +342,15 @@ I will do this by using the following syntax.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/ed6b6f0b-717b-4d22-80bf-8d6413ed464a)
 
+The chain no longer exists within the Internet table, now I will go over deleting a table within nftables.
 
+We can do this by using the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/fb29e657-faff-4e3a-92d1-bbe05b71fc4b)
+
+Now, to confirm that the table has actually been deleted.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/9fabd2b3-7e1c-435b-b3ef-2385b5cee4c9)
 
 
 
