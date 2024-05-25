@@ -408,7 +408,7 @@ This confirms that the rule has been deleted.
 
 Out of these three firewall solutions I am showing, nftables is definitely the one that requires the most learning curve and ufw is the easiest to actually understand and implement out of all three of these firewall solutions. This is by no means an exhaustive guide, but just a guide on the basics of these three firewall solutions, but with the foundations, it is what is required to be able to configure more advanced rules within these firewall solutions and if there is any specific rule that you might need to add, the information on how to achieve this will be at your fingertips, it will just require searching online.
 
-
+### UFW 
 
 
 
