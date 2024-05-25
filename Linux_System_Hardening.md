@@ -500,6 +500,21 @@ To confirm that these rules have been deleted, I will use the following syntax.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/a902dbbb-ddf3-4d85-853e-84c92d29f67f)
 
+Here I have confirmed that I deleted the two IPv4 rules.
+
+What if we want to reset the rules and start over again? Well we can use the following command in our terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/36f1dec2-3acf-4dd3-8378-77ff7fadfb3c)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/143ce5fc-9d18-42a9-93ee-68ecf8772394)
+
+This has reset all the rules and disabled ufw.
+
+If we want to just disable the firewall, we can use the following.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/c88c716b-ab59-47cb-8045-3e124827c127)
+
+
 
 
 
