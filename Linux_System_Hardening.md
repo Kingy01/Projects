@@ -284,6 +284,12 @@ Let's go over what we need to do to save the rules and make them persistent, all
 
 It will generate rules that you have configured in your iptables after you submit this syntax.
 
+##Nftables
+
+Let's now go over Nftables, Nftables does not have any rules configurd out of the box, with nftables, we ned to first creeate tables then add chains to those tables that hook into the Linux kernal as netfilter hooks, then we need to fill those chains with rules.
+
+We will need to execute all the nft rules using sudo.
+
 
 
 
