@@ -330,6 +330,17 @@ Good times, now it's time to actually create some firewall rules within the Inbo
 
 However, just before I move on to doing this, I will go over a few things first, such as how to delete a chain and how to delete a table.
 
+To delete a chain, we will use the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/bfc282ab-4985-44f1-b0ff-d6e6b85382df)
+
+Now I will list the current tables within my nftables config to confirm that the chain is now removed.
+
+I will do this by using the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/ed3faeda-96bf-4497-bbdf-87190456aced)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/ed6b6f0b-717b-4d22-80bf-8d6413ed464a)
 
 
 
