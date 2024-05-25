@@ -276,6 +276,11 @@ Let's go over a rule that actually blocks an IP address for example, let's say t
 
 So, here we are creating the rule for inbound traffic using the INPUT syntax and then we are using the -s switch to specify the source, which will be the IP address that we want to block, then we will specify the action which is -j, and the action we want here is DROP. 
 
+Let's go over what we need to do to save the rules and make them persistent, all we need to do is use the following syntax in our Linux terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/3e0fb042-35ca-42b4-a75c-d708d9014d20)
+
+
 
 
 
