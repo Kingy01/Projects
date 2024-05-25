@@ -446,6 +446,11 @@ Now, I will add a few more rules, i'll even add SSH this time because SSH is com
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/f4844acf-ea6c-4c24-98af-e05a1f1d2e42)
 
+Ok, now that I have a few rules added, I will now enable the ufw firewall on my Linux machine.
+
+I can do this by issuing the following syntax within my terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/87633d1b-6f1a-476b-82bd-ffcb127241ef)
 
 
 
