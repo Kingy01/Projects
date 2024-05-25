@@ -452,8 +452,13 @@ I can do this by issuing the following syntax within my terminal.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/87633d1b-6f1a-476b-82bd-ffcb127241ef)
 
+Now let's check the firewall and what rules are within the ufw firewall.
 
+We can do this by using the following syntax.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/0b75055d-5eff-45d0-9837-cf51b9b1823f)
+
+As we can see here, the rules I added earlier are in the ufw firewall and the firewall is active.
 
 
 
