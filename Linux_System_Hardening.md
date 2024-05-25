@@ -418,6 +418,25 @@ First I will go over how to install ufw on your Linux machine.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/5bce725e-a56a-46fb-a88b-be5b8a0daea7)
 
+The above is the syntax that we need to use to install ufw on our Linux system, now ufw does not come active/enabled by default, so what we can do is actually configure rules first and then after we have configured them, we can enable the ufw firewall.
+
+There is an option to setup default policies within ufw.
+
+If you set up the default policies, what this does is deny all incoming traffic and allow all outgoing connections.
+
+If you're in a situation where this scenario is required, below is the syntax to set this up.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/5f8dba04-e4b3-4d71-8ccc-e4f69052fa7f)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f11a5726-f6d9-4cd3-a3ff-a5ce99f68e6e)
+
+Now, let's say that we need to set up some specific firewall rules just to allow traffic to specific services, we can configure rules to do this.
+
+Here, I will configure a specific rule just to allow HTTPS traffic on port 443.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/4d1844a5-ab70-4e4d-b00b-5fc9280044ff)
+
+We can also list the protocol instead of the port, either one works, here I have stated the HTTPS port, which is 443, if I had of used the protocol HTTPS instead of the port 443, the rule would still work.
 
 
 
