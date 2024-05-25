@@ -460,9 +460,15 @@ We can do this by using the following syntax.
 
 As we can see here, the rules I added earlier are in the ufw firewall and the firewall is active.
 
+Now, say we want to allow traffic from a certain IP address, below is an example of a rule to achieve this.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/a29b2469-ed6d-410f-bec6-6b4ff6286b39)
 
+What if we want to allow traffic from a specific IP and specific port, no problem, we can do that also, below is an example of this.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/6c77b62a-fe2a-4682-bb93-7c1f2dd306fd)
+
+What is firewall rule does is allow the IP address of 10.10.10.10 to connect to SSH on port 22.
 
 
 
