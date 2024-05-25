@@ -438,8 +438,13 @@ Here, I will configure a specific rule just to allow HTTPS traffic on port 443.
 
 We can also list the protocol instead of the port, either one works, here I have stated the HTTPS port, which is 443, if I had of used the protocol HTTPS instead of the port 443, the rule would still work.
 
+Now, I will add a few more rules, i'll even add SSH this time because SSH is commonly used in the real world.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/efaa50f5-a674-4665-8949-34ea12050221)
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/0438189d-b615-4acb-a0a8-379409db80cf)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f4844acf-ea6c-4c24-98af-e05a1f1d2e42)
 
 
 
