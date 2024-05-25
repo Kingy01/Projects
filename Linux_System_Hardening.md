@@ -410,6 +410,13 @@ Out of these three firewall solutions I am showing, nftables is definitely the o
 
 ### UFW 
 
+UFW is short for uncomplicated firewall and it really is uncomplicated, it's definitely the easiest firewall solution out of the three that I am showing here, the syntax is very smooth and easy to understand and it's very quick to get up and going and set up some rules and have a functional firewall within minutes.
+
+It's important to also understand firstly that UFW is available on the Debian and Ubuntu distributions, which is also why I am showing this as an option here, simply because Debian and Ubuntu are very popular distributions, apart from also CentOS. But CentOS comes with a firewall out of the box, which is firewalld.
+
+First I will go over how to install ufw on your Linux machine.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/5bce725e-a56a-46fb-a88b-be5b8a0daea7)
 
 
 
