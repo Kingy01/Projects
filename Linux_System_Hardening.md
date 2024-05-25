@@ -318,6 +318,20 @@ Ok, the table has been added to the tables of nftables successfully, now it's re
 
 What I have done here is instruct nftables to add a chain, I have then given the address family which is inet, then I have provided the table name, in my case "Internet", followed by the chain name that I want created, which is Inbound.
 
+Now, it's always a good idea to check your work and confirm that everything is in place as it should be.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/b7fdf03d-e3a3-4fc7-a082-3406001aea4b)
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/cd97a70d-05c2-4e8a-bf1c-832c56321699)
+
+Ok, I have now confirmed that the chain Inbound exists within my Internet table.
+
+Good times, now it's time to actually create some firewall rules within the Inbound chain.
+
+However, just before I move on to doing this, I will go over a few things first, such as how to delete a chain and how to delete a table.
+
+
+
 
 
 
