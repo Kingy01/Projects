@@ -378,6 +378,26 @@ Now I will check the ruleset and confirm that these rules have been added.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/fbd0e6c5-1b6f-467f-958c-65dacfdc4ad0)
 
+Now, if we want to save the work we have done within nftables, we can use the following syntax within our terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/3b9d218b-0786-48db-b0de-3e2e4ba5ad82)
+
+This will save the tables, chains, rules etc you have created in nftables, so when you reboot the Linux machine, nftables will still have these persistent.
+
+I will now go over deleting firewall rules using nftables.
+
+First, I will obtain the handle number of the rule I want to delete within my chain, to do this, I can use the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/c191c9f0-9077-4486-9f70-c10c3f7d2629)
+
+Here, I have listed the ruleset, except I have added the -a switch, what this does is list the handle numbers of the rules.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/6d52c616-900f-4a95-a82e-b7763cbab082)
+
+Now that I have the handle numbers of the rules, I will demonstrate deleting the rule to allow DNS traffic.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/f924dc07-ea62-4eae-af59-b8c7fd5ba9e6)
+
 
 
 
