@@ -290,6 +290,16 @@ Let's now go over nftables, nftables does not have any rules configurd out of th
 
 We will need to execute all the nft rules using sudo.
 
+Let's go over installing nftables first, depending on the Linux distro that you're using, installing may be different, however, I will cover the install on Debian/Ubuntu and CentOS here.
+
+For Debian/Ubuntu distros, we will install nftables using the following syntax in the Linux terminal.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/87ca69ec-377f-4555-a0cb-864e8e457592)
+
+For CentOS, we will install nftables using the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/55912495-e6b4-4d04-a7d2-742f38d04269)
+
 
 
 
