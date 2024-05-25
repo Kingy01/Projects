@@ -398,9 +398,13 @@ Now that I have the handle numbers of the rules, I will demonstrate deleting the
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/f924dc07-ea62-4eae-af59-b8c7fd5ba9e6)
 
+Now to confirm that the rule has been deleted.
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/9b8cf768-08f7-4ec2-a10a-343fa2b41066)
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/987d8fa7-e432-4680-ac5e-58d9fcc58247)
 
+This confirms that the rule has been deleted.
 
 
 
