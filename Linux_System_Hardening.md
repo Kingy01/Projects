@@ -496,6 +496,9 @@ Now that I have the numbers of the firewall rules, I will delete a few.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/63b29900-ab34-4170-85ee-34b7bd913aed)
 
+To confirm that these rules have been deleted, I will use the following syntax.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/a902dbbb-ddf3-4d85-853e-84c92d29f67f)
 
 
 
