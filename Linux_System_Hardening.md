@@ -468,7 +468,7 @@ What if we want to allow traffic from a specific IP and specific port, no proble
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/6c77b62a-fe2a-4682-bb93-7c1f2dd306fd)
 
-What is firewall rule does is allow the IP address of 10.10.10.10 to connect to SSH on port 22.
+What this firewall rule does is allow the IP address of 10.10.10.10 to connect to SSH on port 22.
 
 
 
