@@ -300,6 +300,12 @@ For CentOS, we will install nftables using the following syntax.
 
 ![image](https://github.com/Kingy01/Projects/assets/24928927/55912495-e6b4-4d04-a7d2-742f38d04269)
 
+Once we have nftables installed on our Linux machine, we then need to setup tables, with nftables, tables are the highest level of the nftables hierarchy, pretty much a table corresponds to a single address family and contains chains that filter packets in that address family.
+
+Here, we will use the inet address family, simply because it is used for both IPv4 and IPv6.
+
+But, now we need a table to add as part of the inet family, here I will add a table called "Internet"
+
 
 
 
