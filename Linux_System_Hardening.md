@@ -470,10 +470,15 @@ What if we want to allow traffic from a specific IP and specific port, no proble
 
 What this firewall rule does is allow the IP address of 10.10.10.10 to connect to SSH on port 22.
 
+If we want to deny traffic, all we need to do is replace allow with deny on any of the rules that we have already configured here, below is a few examples of some deny rules I have created.
+
+![image](https://github.com/Kingy01/Projects/assets/24928927/3f82df9e-3ee6-4d89-b08b-4a52043d0722)
 
 
 
+![image](https://github.com/Kingy01/Projects/assets/24928927/467ab931-f093-42e0-bcb1-a890088c8d53)
 
+Here I have denied traffic to port 21, which is FTP.
 
 
 
